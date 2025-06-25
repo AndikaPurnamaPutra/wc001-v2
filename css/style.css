@@ -896,6 +896,7 @@ body {
 @media (max-width: 991px) {
   .inovation-top {
     gap: 16px;
+    text-align: center;
   }
 }
 
@@ -912,7 +913,6 @@ body {
 
 @media (max-width: 991px) {
   .inovation-center {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
   }
@@ -933,6 +933,7 @@ body {
 
 .inovation__card .inovation__card-img {
   max-width: 100%;
+  width: 100%;
   border-radius: 32px;
   overflow: hidden;
 }
@@ -976,6 +977,11 @@ body {
 
 .inovation__card:nth-child(odd) .inovation__card-body .inovation__card-ornamen {
   max-width: 32px;
+  width: 100%;
+}
+
+.inovation__card:nth-child(even) .inovation__card-body .inovation__card-ornamen {
+  max-width: 100%;
   width: 100%;
 }
 
