@@ -156,6 +156,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-primary:hover {
+  background-color: #c54200;
 }
 
 .btn-outline {
@@ -175,6 +180,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-outline:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn-outline_v2 {
@@ -195,6 +205,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-outline_v2:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary {
@@ -213,6 +228,11 @@ body {
   font-weight: 500;
   line-height: 120%; /* 19.2px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.btn-secondary:hover {
+  background-color: #3d3d3d;
 }
 
 .btn-light {
@@ -295,6 +315,14 @@ body {
   letter-spacing: -0.6px;
 }
 
+@media (max-width: 991px) {
+  .subtitle {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+  }
+}
+
 .header-label {
   color: var(--text-color);
   font-family: var(--font-base);
@@ -318,7 +346,7 @@ body {
   .header-label {
     font-size: 14px;
     line-height: 100%;
-    letter-spacing: -0.14px;
+    letter-spacing: -0.74px;
   }
 }
 
@@ -711,7 +739,10 @@ body {
 
 .kotaro-story__img-decoration {
   max-width: 187px;
-  border-radius: 40px;
+  min-height: 142px;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
   display: flex;
 }
 
@@ -815,6 +846,12 @@ body {
   gap: 24px;
 }
 
+@media (max-width: 991px) {
+  .featured-project__top {
+    text-align: center;
+  }
+}
+
 .featured-project__bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -862,6 +899,10 @@ body {
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.98px;
+}
+
+.featured-project__subtext {
+  text-align: center;
 }
 
 /* inovation */
@@ -1075,6 +1116,7 @@ body {
 @media (max-width: 991px) {
   .philosophy-top {
     gap: 16px;
+    text-align: center;
   }
 }
 
@@ -1139,6 +1181,13 @@ body {
   letter-spacing: -1.2px;
 }
 
+@media (max-width: 991px) {
+  .philosophy-card .philosophy-title {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+  }
+}
+
 .philosophy-card .philosophy-desc {
   color: rgba(0, 0, 0, 0.7);
   font-family: var(--font-base);
@@ -1195,6 +1244,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    background-image: url('../assets/cta__ornament-mobile.png');
   }
 }
 
@@ -1246,6 +1296,13 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+}
+
+@media (max-width: 991px) {
+  .cta-left__wrap {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .cta-subtext {
@@ -1320,6 +1377,17 @@ body {
   }
 }
 
+.seo .heading-h2 {
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .seo .heading-h2 {
+    font-size: 28px;
+    letter-spacing: -0.44px;
+  }
+}
+
 .seo .heading-h2 .span-primary {
   color: var(--primary-color);
 }
@@ -1360,6 +1428,12 @@ body {
   font-weight: 400;
   line-height: 100%; /* 16px */
   letter-spacing: -0.16px;
+}
+
+@media (max-width: 991px) {
+  .category {
+    letter-spacing: -0.76px;
+  }
 }
 
 .seo__categories {
@@ -1457,6 +1531,11 @@ body {
   font-weight: 400;
   line-height: 100%; /* 16px */
   letter-spacing: -0.16px;
+  transition: all 300ms ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
 }
 
 .nav-menu {
@@ -1477,6 +1556,12 @@ body {
   dispay: inline-flex;
   gap: 8px;
   align-items: center;
+  transition: all 300ms ease;
+}
+
+.btn-link:hover,
+.btn-link:hover .svg path {
+  color: var(--primary-color);
 }
 
 .btn-link span {
